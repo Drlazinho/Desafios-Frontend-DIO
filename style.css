@@ -1,0 +1,98 @@
+:root {
+  --white: #fff;
+  --link-title: #fff;
+  --purple: #704f8f;
+  --red: #C01152;
+  --blue: #4570b3;
+  --background: #15161b;
+}
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+a, p {
+  text-decoration: none;
+  color: var(--white);
+}
+
+button {
+  border: none;
+  outline-border: none;
+  padding: .8rem;
+  border-radius: 9px;
+  cursor: pointer;
+  color: var(--white)
+}
+
+main {
+  background-color: var(--background);
+  height: 100vh;
+  width: 100wh;
+}
+
+.title {
+  color: var(--white);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+h2 {
+  color: var(--white)
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.box {
+  background: var(--blue);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+
+}
+
+.box img {
+  width: 10rem;
+}
+
+.box p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.button-readme {
+  background: var(--purple)
+}
+
+.button-solution {
+  background: var(--red)
+}
