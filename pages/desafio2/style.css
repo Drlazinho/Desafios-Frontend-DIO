@@ -10,10 +10,23 @@
   --color-secondary: hsl(163, 70%, 58%);
   --text-black: hsl(296, 70%, 16%);
   --text-title: hsl(239, 70%, 43%);
+  --background-content: hsl(0, 0%, 93%);
+  --color-th: hsl(0, 0%, 93%);
+  --background-color-thead: hsl(0, 0%, 0%);
+  --background-color-td:  hsl(0, 0%, 100%);
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   display: flex;
+}
+
+a {
+  text-decoration: none;
 }
 
 aside {
@@ -37,6 +50,30 @@ header {
   justify-content: center;
 }
 
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+aside img {
+  width: clamp(100px, 50%, 300px);
+}
+
+aside li {
+  list-style: none;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  transition: .2s linear;
+  font-weight: bold;
+
+}
+
+aside li:hover {
+  text-decoration: underline;
+}
+
 header img {
   width: 100px;
 }
@@ -45,7 +82,101 @@ header .title {
   color: var(--color-secondary);
 }
 
+
 main, footer {
   background-color: bisque;
   padding: 2rem;
+}
+
+footer{
+  text-align: center;
+}
+
+section {
+  border: 6px solid var(--color-secondary);
+  border-radius: 8px;
+  padding: 1.5rem 3rem;
+  margin-bottom: 3rem;
+  background-color: var(--background-content);
+}
+
+section h2 {
+  padding: 2rem 0;
+}
+
+section article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 24px;
+  gap: 3rem;
+}
+
+section img {
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: clamp(200px, 50%, 400px);
+}
+.agenda {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+table, th, td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+table th {
+  text-align: start;
+  color: var(--color-th);
+  background-color: var(--background-color-thead);
+}
+
+table thead th:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+table td {
+  background-color: var(--background-color-td);
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-contact-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+fieldset{
+  padding: 1rem;
+  border-radius: 8px;
+  border: 3px solid;
+}
+
+.form, input {
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+.form label {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  font-size: 1.25rem;
+  padding: .8rem;
+}
+
+iframe {
+  width: 100%;
 }
