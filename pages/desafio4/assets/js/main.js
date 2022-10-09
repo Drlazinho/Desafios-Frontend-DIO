@@ -17,9 +17,17 @@ function convertPokemonToLi(pokemon) {
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
             </div>
+            <div class=abilities>
+              <p>&#128171;
+              Skill</p>
+              <ul>
+               ${pokemon.skills.map((skill) => `<li>${skill}</li>`).join('')}
+              <ul>
+            </div>
         </li>
     `
 }
+
 
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {

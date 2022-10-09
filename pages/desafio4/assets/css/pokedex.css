@@ -128,6 +128,28 @@
   height: 70px;
 }
 
+.pokemons .abilities {
+  margin-top: 1rem;
+  background-color: #f6f8fc45;
+  height: 100%;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  color: #fff;
+}
+.pokemons .abilities ul {
+  margin: 0;
+  padding: 0;
+}
+
+.pokemons .abilities li {
+  list-style: none;
+  text-align: center;
+}
+
+.pokemons .abilities p {
+  text-align: center;
+}
+
 .pagination {
   display: flex;
   flex-direction: row;
